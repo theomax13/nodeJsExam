@@ -16,10 +16,13 @@ if (!mongodbUri) {
 }
 
 mongoose
-  .connect(mongodbUri, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(
+    "mongodb+srv://theomax133:cpOt6s5EGAIo7ojr@cluster0.exenmvj.mongodb.net?retryWrites=true&w=majority",
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  )
   .then(() => console.log("MongoDB Connected..."))
   .catch((err) => console.log(err));
 export default {};
