@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es2018", // or a target that is suitable for the Node.js version you are using
+    "module": "commonjs", // Node.js uses CommonJS
+    "lib": ["es2018"], // or a library set that matches the target Node.js version
+    "outDir": "./dist", // where to output compiled JS files
+    "rootDir": "./", // root directory of your TypeScript files
+    "strict": true, // enable all strict type checking options
+    "esModuleInterop": true, // enables import of modules like import * as express from 'express'
+    "skipLibCheck": true, // skip type checking of all declaration files (*.d.ts)
+    "noImplicitAny": true, // raise error on expressions and declarations with an implied 'any' type
+    "strictNullChecks": true, // --strictNullChecks
+    "strictFunctionTypes": true, // --strictFunctionTypes
+    "strictPropertyInitialization": true, // --strictPropertyInitialization
+    "noImplicitThis": true, // raise error on 'this' expressions with an implied 'any' type
+    "alwaysStrict": true, // parse in strict mode and emit "use strict" for each source file
+    "noUnusedLocals": true, // report errors on unused locals
+    "noUnusedParameters": true, // report errors on unused parameters
+    "noImplicitReturns": true, // report error when not all code paths in function return a value
+    "noFallthroughCasesInSwitch": true, // report errors for fallthrough cases in switch statement
+    "moduleResolution": "node", // module resolution strategy
+    "baseUrl": ".", // base directory to resolve non-relative module names
+    "removeComments": true, // remove comments in compiled output
+    "typeRoots": ["./node_modules/@types"], // list of folders to include type definitions from
+    "experimentalDecorators": true, // enable experimental support for ES decorators
+    "emitDecoratorMetadata": true // emit design-type metadata for decorated declarations in source
+  },
+  "include": ["./**/*.ts"], // include all TypeScript files in the project
+  "exclude": ["node_modules", "dist"] // exclude directories from the compilation
+}
